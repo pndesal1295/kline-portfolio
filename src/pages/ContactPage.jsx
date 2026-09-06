@@ -17,7 +17,7 @@ export default function ContactPage() {
           className="group inline-flex flex-col items-center"
         >
           <span className="text-4xl font-black leading-none tracking-tight transition-opacity group-hover:opacity-60 sm:text-5xl md:text-6xl">
-            LET'S WORK TOGETHER ↗
+            LET'S WORK TOGETHER ↱
           </span>
 
           <span className="mt-4 font-mono text-sm text-[var(--fg)]/50 sm:text-base">
