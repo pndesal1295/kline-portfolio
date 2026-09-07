@@ -66,7 +66,7 @@ export default function Nav() {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }
           }}
-          className="inline-block text-sm font-bold tracking-wide transition-transform duration-300 hover:scale-110"
+          className="inline-block text-sm font-bold tracking-wide transition-transform duration-300 hover:scale-110 text-red-600"
         >
           kline
         </Link>
