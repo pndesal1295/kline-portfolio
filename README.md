@@ -8,13 +8,13 @@ Built with **React**, **Vite**, **Tailwind CSS**, and **React Router**.
 
 The portfolio currently features:
 
-- **DepEd Performance Management System**
+- **DepEd Performance Management System**:
   A team-developed performance management system built for a real DepEd client. Features offline-first functionality, role-based workflows, authentication, and data synchronization. Source code is confidential.
 
-- **Raw Weather**
+- **Raw Weather**:
   A weather application that retrieves real-time weather data through an external API.
 
-- **Trastok**
+- **Trastok**:
   An AI-powered web application that integrates a large language model API.
 
 ## Tech Stack
