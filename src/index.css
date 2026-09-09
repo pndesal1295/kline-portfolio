@@ -136,6 +136,21 @@ svg {
   }
 }
 
+@keyframes hover-glow-pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 2px currentColor;
+  }
+
+  50% {
+    text-shadow: 0 0 6px currentColor;
+  }
+}
+
+.hover-glow:hover {
+  animation: hover-glow-pulse 1.4s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

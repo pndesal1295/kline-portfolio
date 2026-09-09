@@ -2,7 +2,6 @@ import Reveal from "../components/ui/Reveal";
 import PageTitle from "../components/ui/PageTitle";
 import { contactLinks } from "../data/contactData";
 import assetUrl from "../utils/assetUrl";
-import { ArrowUpRight } from "lucide-react";
 
 export default function ContactPage() {
   return (
@@ -17,12 +16,11 @@ export default function ContactPage() {
           href="mailto:klineolasiman1@gmail.com"
           className="group inline-flex flex-col items-center"
         >
-          <span className="flex items-center gap-3 text-4xl font-black leading-none tracking-tight transition-opacity group-hover:opacity-60 sm:text-5xl md:text-6xl">
-            LET&apos;S WORK TOGETHER
-            <ArrowUpRight
-              className="h-[0.9em] w-[0.9em] shrink-0"
-              strokeWidth={2.5}
-            />
+
+          <span className="hover-glow text-center text-4xl font-black leading-[0.88] tracking-tight transition-transform duration-300 hover:scale-[1.02] sm:text-5xl md:text-6xl">
+            LET&apos;S WORK
+            <br />
+            TOGETHER
           </span>
 
           <span className="mt-4 font-mono text-sm text-[var(--fg)]/50 sm:text-base">
