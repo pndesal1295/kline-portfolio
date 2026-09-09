@@ -4,9 +4,9 @@ import PageTitle from "../components/ui/PageTitle";
 
 export default function ProjectsPage() {
   return (
-    <section className="bg-[var(--bg)] px-5 pt-32 pb-16 sm:px-8 sm:pt-36 sm:pb-20 md:px-16 md:pt-40 md:pb-24">
+    <section className="mobile-landscape-page bg-[var(--bg)] px-5 pt-32 pb-16 sm:px-8 sm:pt-36 sm:pb-20 md:px-16 md:pt-40 md:pb-24">
       <PageTitle title="Projects" />
-      <FitText className="animate-fade-up font-black leading-none tracking-tighter text-center mx-auto text-[10vw]">
+      <FitText className="mobile-landscape-heading animate-fade-up mx-auto text-center text-[10vw] font-black leading-none tracking-tighter">
         PROJECTS
       </FitText>
       <p

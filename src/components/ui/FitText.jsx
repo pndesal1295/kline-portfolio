@@ -12,9 +12,13 @@ export default function FitText({ as: Tag = "h2", className = "", children }) {
 
     const fit = () => {
       text.style.transform = "scaleX(1)";
+      
       const containerWidth = container.clientWidth;
       const textWidth = text.getBoundingClientRect().width;
-      if (textWidth > 0) setScale(containerWidth / textWidth);
+
+      if (textWidth > 0) {
+        setScale(Math.min(1, containerWidth / textWidth));
+      }
     };
 
     fit();

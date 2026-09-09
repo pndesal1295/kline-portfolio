@@ -1,6 +1,7 @@
 import Reveal from "../../../components/ui/Reveal";
 import ProjectCarousel from "./ProjectCarousel";
 import { projects } from "../../../data/projectsData";
+import { ArrowUpRight } from "lucide-react";
 
 function ProjectLinks({ project }) {
   if (project.private) {
@@ -22,9 +23,11 @@ function ProjectLinks({ project }) {
           className="group/link inline-flex items-center gap-2 transition-colors hover:text-[var(--fg)]/60"
         >
           Live site
-          <span className="transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1">
-            ↗
-          </span>
+<ArrowUpRight
+  size={16}
+  strokeWidth={2}
+  className="transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+/>
         </a>
       )}
 
@@ -36,9 +39,11 @@ function ProjectLinks({ project }) {
           className="group/link inline-flex items-center gap-2 transition-colors hover:text-[var(--fg)]/60"
         >
           GitHub
-          <span className="transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1">
-            ↗
-          </span>
+      <ArrowUpRight
+           size={16}
+           strokeWidth={2}
+           className="transition-transform duration-200 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
+        />
         </a>
       )}
     </>
@@ -55,7 +60,7 @@ function StandardProjectCard({ project, compact = false }) {
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--fg)]/45">
             {project.type}
           </p>
-          <h3 className="mt-2 text-2xl font-bold leading-tight sm:text-3xl">
+          <h3 className="mobile-landscape-project-title mt-2 text-2xl font-bold leading-tight sm:text-3xl">
             {project.name}
           </h3>
         </div>
@@ -63,7 +68,7 @@ function StandardProjectCard({ project, compact = false }) {
         <span className="shrink-0 text-sm text-[var(--fg)]/50">{project.year}</span>
       </div>
 
-      <p className="mt-5 max-w-xl text-sm leading-6 text-[var(--fg)]/65 sm:text-base sm:leading-7">
+      <p className="mobile-landscape-project-description mt-5 max-w-xl text-sm leading-6 text-[var(--fg)]/65 sm:text-base sm:leading-7">
         {compact && project.shortDescription
           ? project.shortDescription
           : project.description}
@@ -95,7 +100,7 @@ function FeaturedProjectCard({ project, compact = false }) {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--fg)]/45">
             Featured project · {project.type}
           </p>
-          <h3 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
+          <h3 className="mobile-landscape-project-title mt-2 text-3xl font-bold leading-tight sm:text-4xl">
             {project.name}
           </h3>
         </div>
@@ -106,7 +111,7 @@ function FeaturedProjectCard({ project, compact = false }) {
       <ProjectCarousel images={project.images} name={project.name} featured />
 
       <div className="mt-6 grid gap-6 md:grid-cols-[minmax(0,1.65fr)_minmax(220px,0.75fr)] md:gap-12">
-        <p className="max-w-4xl text-sm leading-6 text-[var(--fg)]/68 sm:text-base sm:leading-7">
+        <p className="mobile-landscape-project-description max-w-4xl text-sm leading-6 text-[var(--fg)]/68 sm:text-base sm:leading-7">
           {compact && project.shortDescription
             ? project.shortDescription
             : project.description}
@@ -138,7 +143,7 @@ function FeaturedProjectCard({ project, compact = false }) {
 
 export default function ProjectGrid({ compact = false }) {
   return (
-    <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-14 sm:mt-12 md:mt-16 md:grid-cols-2 md:gap-y-20">
+    <div className="mobile-landscape-project-grid mt-10 grid grid-cols-1 gap-x-8 gap-y-14 sm:mt-12 md:mt-16 md:grid-cols-2 md:gap-y-20">
       {projects.map((project, i) => (
         <Reveal
           key={project.name}

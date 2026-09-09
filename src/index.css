@@ -108,6 +108,34 @@ svg {
   transform: translateY(24px);
 }
 
+/* Mobile phones in landscape */
+@media (orientation: landscape) and (max-height: 500px) {
+  .mobile-landscape-page {
+    padding-top: 6rem !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .mobile-landscape-heading {
+    font-size: clamp(3rem, 11vw, 5.5rem) !important;
+  }
+
+  .mobile-landscape-project-grid {
+    margin-top: 2rem !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1.25rem;
+  }
+
+  .mobile-landscape-project-title {
+    font-size: 1.35rem !important;
+  }
+
+  .mobile-landscape-project-description {
+    font-size: 0.8rem !important;
+    line-height: 1.4rem !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
